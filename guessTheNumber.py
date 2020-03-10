@@ -1,18 +1,21 @@
 import random
 
 number = random.randint(1, 20)
-guesses = 0
 
 print("I'm thinking of a number 1 and 20.")
 
-while True:
-    print("Take a guess")
-    guesses = guesses + 1
-    guess = input()
-    if int(guess) == number:
-        print("Good job you've guess my number in " + str(guesses) + " guesses.")
-        break
-    elif int(guess) > number:
+#Ask the player to guess 6 times.
+for guessesTaken in range(1, 7):
+    print('Take a guess')
+    guess = int(input())
+    if guess > number:
         print("Your guess is too high.")
-    elif int(guess) < number:
+    elif guess < number:
         print("Your guess is too low.")
+    else:
+        break
+
+if guess == number:
+    print('Good job! You guessed my number in ' + str(guessesTaken) + ' guesses!')
+else:
+    print("Nope, The number I was thinking of was " + str(number))
