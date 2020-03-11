@@ -7,9 +7,12 @@ def colllatz(number):
         return 3 * number + 1
 
 print('Enter number:')
-num = int(input())
 
-while True:
-    num = colllatz(num)
-    if num == 1:
-        break
+try:
+    num = int(input())
+    while True:
+        num = colllatz(num)
+        if num == 1:
+            break
+except ValueError:
+    print("Hey magnificent user please do enter a number =)")
