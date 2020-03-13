@@ -15,4 +15,4 @@ try:
         if num == 1:
             break
 except ValueError:
-    print("Hey magnificent user please do enter a number =)")
+    print("Hey magnificent user please do enter a number =)pip")
