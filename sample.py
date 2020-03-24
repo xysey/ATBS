@@ -1,10 +1,10 @@
-birthdays = {'Kenneth': 'August 29', 'Josel': 'August 8', 'Eugene' : 'April 8' }
+birthdays = {"Kenneth": "August 29", "Josel": "August 8", "Eugene": "April 8"}
 
 while True:
-    print('Enter a name: (blank to quit)')
+    print("Enter a name: (blank to quit)")
     name = input()
 
-    if name == '':
+    if name == "":
         break
 
     if name in birthdays:
@@ -14,4 +14,5 @@ while True:
         print("What is their birthday?")
         bday = input()
         birthdays[name] = bday
-        print('Birthday database is updated')
+        print("Birthday database is updated")
+

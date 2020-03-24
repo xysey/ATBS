@@ -6,7 +6,8 @@ def colllatz(number):
         print(3 * number + 1)
         return 3 * number + 1
 
-print('Enter number:')
+
+print("Enter number:")
 
 try:
     num = int(input())
